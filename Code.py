@@ -1,4 +1,3 @@
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -15,7 +14,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 
-df = pd.read_csv(r'C:\\Users\\acer1\\Downloads\\Poject\\Crop_recommendation.csv')
+df = pd.read_csv(r'./Crop_recommendation.csv')
 
 
 print(df.head())
@@ -33,7 +32,7 @@ target = df['label']
 
 Xtrain, Xtest, Ytrain, Ytest = train_test_split(features, target, test_size=0.2, random_state=2)
 
-# Initialize lists for storing model names and accuracies
+
 acc = []
 model = []
 
